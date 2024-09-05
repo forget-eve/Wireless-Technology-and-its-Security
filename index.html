@@ -79,6 +79,13 @@
           // 面板导航栏风格，支持 "mac" 与 "windows"
           os: 'mac',
         },
+        tabs: {
+          persist: true, // default
+          sync: false, // default
+          theme: 'material', // default
+          tabComments: true, // default
+          tabHeadings: true // default
+        },
         busuanzi: true,
         search: {
           maxAge:86400000,
@@ -129,6 +136,8 @@
     <!-- Docsify Chat -->
     <script src="//cdn.jsdelivr.net/npm/docsify-chat/lib/docsify-chat.min.js"></script>
     <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+    <!-- docsify-tabs (latest v1.x.x) -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js"></script>
   </body>
