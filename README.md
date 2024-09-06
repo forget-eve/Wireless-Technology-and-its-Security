@@ -1051,6 +1051,8 @@ $$(\frac{4}{\pi})[sin(2\pi ft)+(\frac{1}{3})sin(2\pi (3f )t)+(\frac{1}{5})sin(2\
 
 $$S(t) = A × \frac{4}{\pi} \sum\limits_{k为奇数,k=1}{\infty} \frac{sin(2\pi kft)}{k}$$
 
+<!-- tabs:start -->
+
 #### **例1**
 
 考虑频率 $f、3f、5f$ 的正弦信号叠加，如果 $f=1MHz$ ，带宽为 $5f - f = 4MHz$ 。如果用此信号近似为方波，则一个bit占用时间 $\frac{1}{2}f$ ，传输速率为 $2f=2Mbps$；
