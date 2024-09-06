@@ -721,5 +721,6 @@ ALOHANet使用新的介质访问技术，称为ALOHA随机存取(ALOHA random ac
 #### 无线网络安全与有线网络安全的区别
 
 <p align="center">
-  <img src="./img/无线网络安全与有线网络安全的区别.png" alt="无线网络安全与有线网络安全的区别">
+  <img src="./img/无线网络安全与有线网络安全的区别1.png" alt="无线网络安全与有线网络安全的区别">
 </p>
+
