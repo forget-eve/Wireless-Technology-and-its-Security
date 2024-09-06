@@ -1601,7 +1601,7 @@ $$P_r(d)=\frac{P_tG_tG_r\lambda^2}{(4\pi)^2d^2L}$$
 $$P_r(d)=P_tG_tG_r\frac{h_t^2h_r^2}{d^4}$$
 
 <p align="center">
-  <img src="./img/地面反射模型.png" alt="地面反射模型">
+  <img src="./img/地面反射模型1.png" alt="地面反射模型">
 </p>
 
 <!-- tabs:end -->
@@ -1981,7 +1981,7 @@ A[A接入点] <--> B[中继站] <--> C[B接入点]
   - `串扰` ：来自其它通信信号的干扰，如电话串声；
   - `脉冲噪声` ：脉冲信号所引起的噪声，在模拟传输中并无大碍，但是数字传输中的主要错误源。
 
-### **大气吸收(atmospheric absorption)
+### **大气吸收(atmospheric absorption)**
 
 - [x] 大气吸收：水蒸气和氧气是产生此种衰减的主要因素，在雨水较多地带尽可能使用低频传输。
   - 水蒸气：15Ghz-22Ghz
