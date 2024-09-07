@@ -2371,7 +2371,7 @@ $$S·C=(A+B+C)·C=A·C+B·C+C·C=0+0+(-1)=-1$$
 
 <!-- tabs:start -->
 
-##### **优点** 
+##### **优点**
 
 - [x] 由于各个子载载波之间存在正交性，允许子信道的频谱相互重叠，因此可以 <span style="color:red;">最大限度的利用频谱资源</span> ；
 - [x] 可以通过使用不同数量的子信道来实现 <span style="color:red;">上行和下行链路中不同的传输速率</span> ；
@@ -2380,7 +2380,7 @@ $$S·C=(A+B+C)·C=A·C+B·C+C·C=0+0+(-1)=-1$$
 - [x]  <span style="color:red;">很强的抗窄带干扰性</span> ，因为这些干扰仅仅影响到很小一部分的子信道；
 - [x] 可以选用基于IFFT/FFT的OFDM实现方法， <span style="color:red;">简单、经济</span> 。
 
-##### **缺点** 
+##### **缺点**
 
 - [x] OFDM对频偏和相位噪声比较敏感，容易带来 <span style="color:blue;">衰耗</span> ；
 - [x] OFDM的峰值平均功率比较大，会导致射频放大器的 <span style="color:blue;">功率效率比较低</span> ；
@@ -2452,7 +2452,7 @@ OFDMA则可以在同一时隙将不同的子载波分给 <span style="color:blue
 
 ### 扩频通信技术的特点
 
-<!-- tabs:end -->
+<!-- tabs:start -->
 
 #### **抗干扰性强**
 
