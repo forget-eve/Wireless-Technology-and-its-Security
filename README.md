@@ -2718,3 +2718,163 @@ NOMA面临的难题：非正交传输的接收机相当复杂，需要提高 <sp
   - 人身安全：电磁波辐射对人体的伤害。
 
 <!-- tabs:end -->
+
+<details>
+  <summary><strong>无线局域网的发展历程与相关标准化活动</strong></summary>
+
+- [x] 无线局域网的起源
+  - <strong style="color:blue;">AlohaNet</strong>：1971年夏威夷大学的实验项目，实现4个岛屿上的7台计算机的星型网络互联，传输速度为9.6kbps；
+  - 1979年瑞士IBM Rueschlikon实验室的Gfeller为解决车间布线问题设计了<span style="color:red;">红外线无线局域网</span>；
+    > - 没有大规模应用；
+  - 1980年加利福利亚惠普实验室的Ferrert设计了<span style="color:red;">真正意义的基于900Mhz频段的无线网络</span>；
+    > - 采用直序微波扩频技术，实现了100kbps的速度，提出了<strong style="color:blue;">CSMA</strong>的解决方案，为现代无线网络的实现奠定了基础。
+- [x] 无线局域网的发展经历了五代
+  - <strong style="color:blue;">第一代无线局域网</strong>
+    - 1985年，美国联邦通信委员会FCC颁布的电波法规为无线局域网分配了两个频段：
+      > - <span style="color:red;">专用频段</span>：高于2GHz的高频段为无线局域网专用，避开移动电话的1-2Ghz；
+      > - <span style="color:red;">免许可证频段</span>：902-928MHz和2.4-2.4835GHz，最大发射功率为1W，若采用扩频技术，扩频增益不小于10dB，最大发射功率不超过100mW；
+    - 无线局域网产品陆续上市
+      > - 如RangeLan (900MHz)、NCR(2.4GHz)、Motorola(18-19GHz)。
+  - <strong style="color:blue;">第二代无线局域网</strong>
+    - IEEE为无线局域网制定了第一个版本标准─IEEE 802.11于1997年11月26日正式发布；
+    - 1998年起很多公司推出了基于IEEE 802.11的无线局域网产品，工作在2.4-2.4835Ghz频段，传输速率为1-2Mbit/s；
+    - IEEE802.11主要用于解决办公室局域网和校园网中，用户与用户终端的无线接入，速率最高能达到2Mbps；
+    - 由于802.11在速率和传输距离上都不能满足人们的需要，因此，IEEE小组又相继推出了802.11b和802.11a两个新标准。<span style="color:red;">三者之间技术上的主要差别在于MAC子层和物理层</span>。
+  - <strong style="color:blue;">第三、四代无线局域网</strong>
+    - `HiperLAN`
+      - 欧洲成立高速无线局域网(HiperLAN)，获得了ITU的5.15~5.35GHz和17.1~17.3GHz两个200MHz频段；
+      - 1997年完成HiperLAN 1标准，传输速度可达11Mbps，取得了一定的成功，促使FCC开放了5Ghz频段用于无线局域网(5.15~5.35GHz)(5.725~5.825)；
+      - 2002年HiperLAN2标准制定完成，与IEEE 802.11a类似，工作于5GHz频段，最大传输速率为54Mb/s，属于第四代无线局域网产品。
+    - `IEEE 802.11`
+      - 1999年IEEE 802.11提出IEEE 802.11a(5GHz)和IEEE 802.11b(2.4GHz)标准，传输速率分别可达54Mb/s和11Mb/s，802.11b与HiperLAN1同属第三代无线局域网；
+      - 2002年IEEE 802.11通过IEEE802.11g标准，传输速率为54Mb/s，工作于2.4GHz频段，与IEEE 802.11b标准兼容；
+      - 2009年发布802.11n，工作在2.4和5G频段，属于第四代产品理论速率最高可达600Mbps(目前业界主流为300Mbps)。
+
+</details>
+
+## 制约802.11无线技术发展的几个方面
+
+- [x] <strong style="color:blue;">数据传输速率有限</strong>
+  - 标称可达11～54Mbit/s(或更高， 如802.11n传输速达到600Mbps)，但 `系统开销` 会使应用层速率减少50%左右(半双工、距离、干扰、…)；
+- [x] <strong style="color:blue;">无线通信的损失</strong>
+  - 无线信号 `干扰` ，特别是同频段、同技术设备之间将存在明显影响；
+  - 无线传播 `损耗` ：衰减、噪声、折射、反射、衍射等；
+- [x] <strong style="color:blue;">wi-fi实现大规模覆盖需要密集的有线传输资源</strong>
+  - 4G/WiMAX基站的 `覆盖` 范围比WiFi AP `覆盖` 范围大数十到上百倍；
+- [x] <strong style="color:blue;">wi-fi无线技术本身没有考虑移动性</strong>
+  - 即便IEEE802.11s对移动性进行增强，<span style="color:red;">最多也只能支持步行的移动速度</span>；
+  - 4G和WiMAX都支持120km/h以上的移动性；
+- [x] <strong style="color:blue;">wi-fi没有QoS保障机制，只支持Best Effort业务</strong>
+  - 适用于WEB浏览、FTP下载以及收发Email等；
+  - 语音通信、视频传输等业务的 `QoS` 很难得到保障。
+
+<!-- chat:start -->
+
+<!-- title: 小Tips -->
+
+#### **Tips**
+
+802.11e考虑了QoS
+
+<!-- chat:end -->
+
+## 无线局域网(WLan)的组成
+
+<!-- tabs:start -->
+
+### **站( `Station，STA` )**
+
+- [x] 也称主机(Host)或终端(Terminal)，无线局域网的最基本组成单元；站包括以下几部分：
+  - <span style="color:blue;">终端用户设备</span>：台式计算机、手机、笔记本电脑等；
+  - <span style="color:blue;">无线网络接口</span>：无线网卡及驱动程序 ；
+  - <span style="color:blue;">网络软件</span>：操作系统、网络协议栈、网络应用程序。
+- [x] 无线局域网中的站根据 `移动性` 可分为以下三种：
+  - <span style="color:blue;">固定站</span>：位置不动的站，如台式机；
+  - <span style="color:blue;">半移动站</span>：经常改变位置，但位置改变过程中不通信，如笔记本电脑；
+  - <span style="color:blue;">移动站</span>：移动中保持通信，移动速度限定在2-10m/s，如手机。
+- [x] 站之间的通信由<span style="color:blue;">天线辐射范围</span>和<span style="color:blue;">应用环境</span>决定
+  - 服务区域( `Service Area，SA` )
+    > - 无线局域网能覆盖的区域范围；
+  - 基本服务区/小区( `Basic Service Area，BSA/Cell` )
+    > - 无线局域网中移动站的无线收发信机及地理环境所确定的<span style="color:blue;">通信范围</span>，是无线局域网的最小单元；
+  - 基本业务组( `Basic Service Set，BSS` )
+    > - 在BSA内彼此互相通信的一组<span style="color:blue;">主机</span>。
+
+<p align="center">
+  <img src="./img/站.png" alt="站">
+</p>
+
+<!-- chat:start -->
+
+<!-- title: 小Tips -->
+
+#### **Tips**
+
+STA只能与同一BSS中的STA进行通信(可能需要借助AP)；
+
+#### **Tips**
+
+STA与不同BSS中的STA进行通信时，需通过本BSS的AP和对方的AP。
+
+<!-- chat:end -->
+
+### **无线介质( `Wireless Media，WM` )**
+
+- [x] 无线局域网中站与站、站与接入点之间通信的传输介质，由物理层定义，这里指空气，是无线电波、和红外线传播良好的介质。
+
+### **基站( `Base Station，BS` )或接入点( `Access Point，AP` )**
+
+- [x] 类似蜂窝结构中的基站，是无线局域网的重要组成单元。通常处于BSA的中心，一般固定不动；
+- [x] 基本功能
+  - <span style="color:blue;">接入点</span>：实现其他非AP的站对分布式系统的接入访问和同一BSS中的不同站间的通信联结；
+  - 无线网络和分布式系统的<span style="color:blue;">桥接点</span>：实现无线局域网与分布式系统间的桥接；
+  - BSS的<span style="color:blue;">控制中心</span>：对其他非AP的站控制和管理。
+
+### **分布式系统( `Distribution System，DS` )**
+
+- [x] 为了覆盖更大的区域，把<span style="color:red;">多个BSA通过分布式系统连接起来</span>，形成一个扩展业务区<span style="color:blue;">ESA(Extended Service Area)</span> ，连接多个BSA的组件称为DS；
+- [x] 通过DS互相连接起来的属于同一个ESA的所有主机组成一个扩展业务组<span style="color:blue;">ESS(Extended Service Set)</span>。
+
+<p align="center">
+  <img src="./img/分布式系统.png" alt="分布式系统">
+</p>
+
+- [x] 连接不同BSA的通信信道，可以是<span style="color:blue;">有线链路</span>也可以是<span style="color:blue;">无线链路</span>；
+- [x] 分布式系统接口(<span style="color:blue;">Portal</span>)
+  > - 用于连接骨干网和无线局域网的接口，如：网桥、路由器、网关；
+- [x] 采用无线方式连接其他BSS就称为无线分布式系统(<span style="color:blue;">Wireless Distribution System，WDS</span>)
+
+<p align="center">
+  <img src="./img/分布式系统1.png" alt="分布式系统">
+</p>
+
+- [x] <span style="color:red;">WDS(Wireless Distribution System)</span>无线分布式系统
+  - 采用无线方式连接两个接入点(AP)；
+  - 在整个WDS无线网络中，把多个AP通过桥接或中继器的方式连接起来，使整个局域网络以无线的方式为主。
+- [x] WDS应用模式
+  - 以桥接方式无线连接两个局域网(<span style="color:blue;">无线网桥</span>)
+  - 扩展无线局域网的覆盖范围(<span style="color:blue;">无线中继</span>)
+
+<p align="center">
+  <img src="./img/分布式系统2.png" alt="分布式系统">
+</p>
+
+<!-- chat:start -->
+
+<!-- title: 两种模式的主要不同点 -->
+
+#### **Tips**
+
+<strong style="color:red;">中继模式</strong>(二层)：从某一接入点接收的数据包可以通过WDS连接转发到另一接入点；
+
+#### **Tips**
+
+<strong style="color:red;">桥接模式</strong>(三层)：通过WDS连接接收的数据包只能被转发到有线网络或无线主机。
+
+#### **Tips**
+
+即：<span style="color:blue;">只有中继模式可以进行WDS到WDS数据包的转发</span>。
+
+<!-- chat:end -->
+
+<!-- tabs:end -->
