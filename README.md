@@ -2645,12 +2645,76 @@ NOMA面临的难题：非正交传输的接收机相当复杂，需要提高 <sp
   <img src="./img/5G总结.png" alt="总结">
 </p>
 
+# 无线局域网
 
+## 无线局域网的概念
 
+- [x] WLAN：Wireless Local Area Networks；
+- [x] 无线局域网是在<span style="color:blue;">局部区域</span><span style="color:red;">(一般几十米，室外可以百米左右)</span>内以<span style="color:red;">无线</span>信道作为传输介质的计算机网络，主要用于宽带家庭、办公大楼以及园区内部；
+- [x] 无线局域网利用电磁波取代线缆进行信息传递，可作为传统有线网络的<span style="color:red;">延伸、补充、或替代</span>。
 
+<p align="center">
+  <img src="./img/无线局域网的概念.png" alt="无线局域网的概念">
+</p>
 
+<!-- tabs:start -->
 
+### **无线局域网的优点**
 
+- <span style="color:red;">移动性</span>
+  - `通信状态` 上移动
+    - <span style="color:blue;">半移动</span>：设备可在网内移动，但只能在<span style="color:red;">静止</span>状态下通信；
+    - <span style="color:blue;">全移动</span>：设备可在网内<span style="color:red;">移动中通信</span>，快速移动和慢速移动两种；
+  - `网络层次` 上移动
+    - <span style="color:blue;">越区切换</span>：<span style="color:red;">数据链路层</span>的移动；
+    - <span style="color:blue;">漫游</span>：<span style="color:red;">网络层</span>的移动。
 
+- <span style="color:red;">WLAN的移动性支持能力</span>
+  - 固定
+  - 半移动
+  - 慢速移动(2-10m/s) 
 
+- <span style="color:red;">灵活性</span>
+  - 安装容易、使用简单，可将网络延伸到线缆无法达到的地方；
+  - 组网灵活，可通过基础结构接入骨干网，也可<span style="color:blue;">自组网(ad hoc)</span>；
 
+- <span style="color:red;">可扩展性</span>
+  - 在适当位置添加接入点(AP)和扩展点(EP)即可完成网络扩充；
+
+- <span style="color:red;">经济性</span>
+  - 可用于物理布线困难和不适合进行物理布线的地方，如危险区和古建筑等场合；
+  - 节省线缆和附件、布线工序和人工费用；
+  - 网络投入迅速提高经济效益；
+  - 临时网络使用，价格低成本；
+  - 线路频繁更换场合，节省长期成本。
+
+### **无线局域网的缺点**
+
+- <span style="color:red;">可靠性</span>
+  - 无线局域网易受到<span style="color:blue;">噪声和干扰</span>的影响，<span style="color:blue;">信号误码率</span>远高于有线网络；
+
+- <span style="color:red;">带宽与系统容量</span>
+  - 频率<span style="color:blue;">资源有限，带宽</span>远小于有线网络；
+  - 系统<span style="color:blue;">容量</span>也远低于有线网络；
+
+- <span style="color:red;">兼容性与共存性</span>
+  - 产品的多样性导致不同厂家的产品有<span style="color:blue;">兼容性</span>问题；
+  - 多种无线通信技术共存，如：802.11(2.4G、5G)、蓝牙；
+
+- <span style="color:red;">覆盖范围</span>
+  - 低功率和高频率限制了<span style="color:blue;">覆盖范围</span>；
+
+- <span style="color:red;">干扰</span>
+  - 外界设备容易对无线网络产生<span style="color:blue;">干扰</span>。
+
+- <span style="color:red;">能耗受限</span>
+  - 无线终端多为依靠电池供电的便携设备；
+
+- <span style="color:red;">高速移动</span>
+  - <span style="color:blue;">不支持高速移动</span>，大范围移动也受限制；
+
+- <span style="color:red;">安全性</span>
+  - 信息安全：信息传输的可靠性、保密性、合法性；
+  - 人身安全：电磁波辐射对人体的伤害。
+
+<!-- tabs:end -->
